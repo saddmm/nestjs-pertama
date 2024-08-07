@@ -5,6 +5,7 @@ import { UsersModule } from './users/users.module';
 import { MongooseModule } from '@nestjs/mongoose';
 import { APP_PIPE } from '@nestjs/core';
 import { AuthModule } from './auth/auth.module';
+import { ItemModule } from './item/item.module';
 import cookieSession = require('cookie-session');
 
 @Module({
@@ -14,6 +15,8 @@ import cookieSession = require('cookie-session');
     UsersModule,
 
     AuthModule,
+
+    ItemModule,
   ],
   providers: [
     AppService,

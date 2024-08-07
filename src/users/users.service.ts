@@ -9,7 +9,7 @@ export class UsersService {
     constructor(@InjectModel('Users') private userModel: Model<User>) { }
     
     findAll() {
-        return this.userModel.find().exec()
+        return this.userModel.find()
     }
 
     findEmail(email: string) {
